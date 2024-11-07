@@ -39,7 +39,11 @@ const unknownEndpoint = (request, response) => {
 
 // GET HOME
 app.get('/', (request, response) => {
-  response.send('<h1>Hello World!</h1>')
+  response.send(
+    `
+    <h1>Notes API</h1>
+    <p><code>api/notes</code></p>
+    `)
 })
 
 // GET ALL
